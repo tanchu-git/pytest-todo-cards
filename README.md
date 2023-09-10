@@ -13,7 +13,7 @@ Both ```cli.py``` and ```db.py``` are paper thin in code.
 ## Test Cases
 Test cases are the specific test scripts in the test [folder](https://github.com/tanchu-git/pytest-todo-cards/tree/main/tests).
 
-Ex -
+Here is ```test_count.py``` -
 
 ```python
 """
