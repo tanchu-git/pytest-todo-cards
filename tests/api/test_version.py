@@ -5,7 +5,6 @@ Test Cases
 import re
 import cards
 
-
 def test_version():
     """
     There is no api for version other than cards.__version__.
