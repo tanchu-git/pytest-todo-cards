@@ -30,7 +30,3 @@ def cards_db(session_cards_db, request, faker):
             db.add_card(Card(summary=faker.sentence(),
                              owner=faker.first_name()))
     return db
-
-
-
-
