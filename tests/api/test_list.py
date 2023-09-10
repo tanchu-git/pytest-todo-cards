@@ -10,7 +10,6 @@ def test_list_no_cards(cards_db):
     """Empty db, empty list"""
     assert cards_db.list_cards() == []
 
-
 def test_list_several_cards(cards_db):
     """"
     Given a variety of cards, make sure they get returned.
@@ -70,4 +69,3 @@ def test_list_filter(db_filled, known_set, owner_, state_, expected_indices):
     assert len(result) == len(expected_indices)
     for i in expected_indices:
         assert known_set[i] in result
-
