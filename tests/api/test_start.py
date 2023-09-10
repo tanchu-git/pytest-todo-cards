@@ -6,7 +6,6 @@ Test Cases
 import pytest
 from cards import Card, InvalidCardId
 
-
 @pytest.mark.parametrize("start_state", ("todo", "in prog", "done"))
 def test_start(cards_db, start_state):
     """
