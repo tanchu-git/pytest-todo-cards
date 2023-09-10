@@ -35,7 +35,6 @@ def test_delete_from_many(cards_db, three_cards):
         # just making sure this doesn't throw an exception
         cards_db.get_card(i)
 
-
 def test_delete_last_card(cards_db):
     """
     Count should be back to 0
@@ -46,7 +45,6 @@ def test_delete_last_card(cards_db):
     assert cards_db.count() == 0
     with pytest.raises(InvalidCardId):
         cards_db.get_card(i)
-
 
 def test_delete_non_existent(cards_db):
     """
