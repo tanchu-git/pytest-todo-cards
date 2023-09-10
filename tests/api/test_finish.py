@@ -6,7 +6,6 @@ Test Cases
 import pytest
 from cards import Card, InvalidCardId
 
-
 @pytest.mark.parametrize("start_state", ("todo", "in prog", "done"))
 def test_finish(cards_db, start_state):
     """
@@ -17,7 +16,6 @@ def test_finish(cards_db, start_state):
     cards_db.finish(i)
     c = cards_db.get_card(i)
     assert c.state == "done"
-
 
 def test_finish_non_existent(cards_db):
     """
