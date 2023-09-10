@@ -6,7 +6,6 @@ Test Cases
 """
 import pytest
 
-
 def test_count_no_cards(cards_db):
     assert cards_db.count() == 0
 
