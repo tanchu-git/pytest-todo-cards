@@ -1,35 +1,34 @@
-cards
-=====
+# Test Case
+
+## Todo cards app
+
+    $ pip install cards
 
 
-Project task tracking / todo list
-
-Usage
------
-
-Here\'s a demo of how it works:
-
+## App demo
+CLI
+    
     $ cards add a todo
 
-    $ cards add -o Brian another task
+    $ cards add -o Tan another task
 
     $ cards list
          ╷       ╷       ╷
       ID │ state │ owner │ summary
     ╺━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━╸
       1  │ todo  │       │ a todo
-      2  │ todo  │ Brian │ another task
+      2  │ todo  │ Tan   │ another task
          ╵       ╵       ╵
 
-    $ cards update 1 -o Brian
+    $ cards update 1 -o Tan
 
     $ cards finish 1
 
     $ cards
       ID │ state │ owner │ summary
     ╺━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━╸
-      1  │ done  │ Brian │ a todo
-      2  │ todo  │ Brian │ another task
+      1  │ done  │ Tan   │ a todo
+      2  │ todo  │ Tan   │ another task
          ╵       ╵       ╵
 
     $ cards delete 1
@@ -37,7 +36,7 @@ Here\'s a demo of how it works:
     $ cards
       ID │ state │ owner │ summary
     ╺━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━╸
-      2  │ todo  │ Brian │ another task
+      2  │ todo  │ Tan   │ another task
          ╵       ╵       ╵
 
     $ cards --help
