@@ -8,7 +8,6 @@ Test Cases
 import pytest
 from cards import Card, InvalidCardId
 
-
 def test_update_owner(cards_db):
     """
     summary and state should stay the same
@@ -19,7 +18,6 @@ def test_update_owner(cards_db):
 
     mod = cards_db.get_card(i)
     assert mod == Card("foo", owner="not me")
-
 
 def test_update_summary(cards_db):
     """
@@ -32,7 +30,6 @@ def test_update_summary(cards_db):
     mod = cards_db.get_card(i)
     assert mod == Card("bar", owner="me", state="done")
 
-
 def test_update_both(cards_db):
     """
     state should stay the same
@@ -43,7 +40,6 @@ def test_update_both(cards_db):
 
     mod = cards_db.get_card(i)
     assert mod == Card("bar", owner="not me", state="todo")
-
 
 def test_update_non_existent(cards_db):
     """
