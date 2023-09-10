@@ -1,9 +1,16 @@
-# Test Case
+# pytest
+## Test Scope
+- Test the behaviour of user visible funcitonality.
+- Input validation.
+- Database is stored in the users local directory. No need for security, performance and load testing.
 
+## Test Strategy
+Both ```cli.py``` and ```db.py``` are paper thin in code.
+- Testing through the API tests most of the system and logic.
+- Test features that are visible in the CLI (accessible to users).
+- Test the CLI enough to verify it is calling the API correctly.
 ## Todo cards app
-
     $ pip install cards
-
 
 ## App demo
 CLI
