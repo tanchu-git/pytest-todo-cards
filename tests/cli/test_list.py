@@ -1,6 +1,5 @@
 import cards
 
-
 expected_output = """\
 
   ID   state   owner   summary    
@@ -20,4 +19,3 @@ def test_main(cards_db, cards_cli):
     cards_db.add_card(cards.Card("another"))
     output = cards_cli("")
     assert output.strip() == expected_output.strip()
-
